@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "rake", "~> 12.0"
+# gem "rake", "~> 12.0"
 # # gem "dotenv"
 # catbreeds.gemspec.add_dependency "httparty"
 # catbreeds.gemspec.add_dependency "dotenv"
