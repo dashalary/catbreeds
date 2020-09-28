@@ -10,7 +10,6 @@ def call
     input = gets.strip.downcase
     while input != 'exit' do
         if input == 'breeds'
-            # @breeds = gets.strip.downcase 
             print_breeds
         elsif input.to_i > 0 && input.to_i <= Breed.all.length 
             breed = Breed.all[input.to_i-1]
