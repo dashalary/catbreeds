@@ -1,4 +1,4 @@
-class CatBreeds::API 
+class API 
 
 
 
@@ -7,7 +7,7 @@ class CatBreeds::API
         headers: {"Authorization" => "#{ENV['API_KEY']}"},
     })
     breeds = resp["breeds"]
-    CatBreeds::Breed.new_from_collection(breeds)
+    Breed.new_from_collection(breeds)
     end
 
 
