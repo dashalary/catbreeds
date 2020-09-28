@@ -6,7 +6,14 @@ def menu
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     puts "Please enter 'breeds' to see a list of all breeds of domestic cats or 'exit' to exit."
     puts " "
-    @breeds = gets.strip.downcase
+    input = gets.strip.downcase
+    while input != 'exit' do
+        if input == 'breeds'
+            @breeds = gets.strip.downcase 
+            API.
+        puts "Please enter a breed number to see more information about your chosen breed."
+
+    end
 
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 end
