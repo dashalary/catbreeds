@@ -3,10 +3,10 @@ require 'httparty'
 require 'dotenv'
 require 'json'
 
-require_relative "catbreeds/version"
-require_relative "catbreeds/cli"
-require_relative "catbreeds/api"
-require_relative "catbreeds/breed"
+require_relative "../lib/version"
+require_relative "../lib/cli"
+require_relative "../lib/api"
+require_relative "../lib/breed"
 
 module CatBreeds
   class Error < StandardError; end

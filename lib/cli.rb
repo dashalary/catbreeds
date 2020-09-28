@@ -1,6 +1,7 @@
 class CLI 
+@@all = []
 
-def menu 
+def call
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     puts "Welcome to CatBreeds!"
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -13,7 +14,7 @@ def menu
             print_breeds
         elsif input.to_i > 0 && input.to_i <= Breed.all.length 
             breed = Breed.all[input.to_i-1]
-            API.get_breed(breed)
+            API.get_breeds(breed)
             print_breed(breed)
             prompt 
         else
@@ -22,19 +23,16 @@ def menu
         end 
         input = gets.strip.downcase 
     end
+    puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     puts "Thank you for using CatBreeds!"
     puts "Goodbye!"
-end
-
-
-    end
-
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 end
 
+
 def print_breeds
-    Breed.all.each_with_index(1) do |b, i|
-        puts " #{i}. #{b.name}"
+    Breed.all.each_with_index do |b, i|
+        puts " #{i+1}. #{b.name}"
     end
 end
 

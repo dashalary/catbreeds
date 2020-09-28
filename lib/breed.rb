@@ -2,11 +2,11 @@ class Breed
 attr_accessor :name, :temperament, :description
 @@all = []
 
-    def initialize(name:nil, temperament:nil, description:nil)
-        @@all << self
-        @name = name 
-        @temperament = temperament
-        @description = description
+    def initialize(attr_hash)
+        attr_hash.each do |k,v|
+            self.send(("#{k}="), v) if self.respond_to?(("#{k}="))
+        end
+        save
     end 
 
     def self.all
