@@ -1,4 +1,4 @@
-class API 
+class CatBreeds::API 
 
 
 
@@ -7,7 +7,7 @@ class API
 
 
 
-    
+
 
 
 

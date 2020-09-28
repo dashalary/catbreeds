@@ -2,7 +2,7 @@ require_relative 'lib/catbreeds/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "catbreeds"
-  spec.version       = Catbreeds::VERSION
+  spec.version       = CatBreeds::VERSION
   spec.authors       = ["dashalary"]
   spec.email         = ["dk2800@nyu.edu"]
 
@@ -26,4 +26,5 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
 end
