@@ -1,20 +1,19 @@
 class API 
 
     def self.get_breeds
-    response = HTTParty.get("https://api.thecatapi.com/v1/breeds")
-        # headers: {"x-api-key" => "b3ae8931-fd14-4c56-8665-148ef5aedc66"
-        # })
-        breeds = response["breeds"]
+        response = HTTParty.get("https://api.thecatapi.com/v1/breeds")
+        breeds = JSON.parse(response.body)["breeds"]
+        breeds.each do |b|
+        Breed.new(name: b["name"], temperament: b["temperament"], description: b["description"])
+        end
+    end
 
-
-    # breeds = JSON.parse(response)["breeds"].each do |c|
-    #     Breed.new(name: c["name"])
-  
-
-
-
+    def self.get_breed(breed)
 
     end
+
+
+
 
 
 end
