@@ -10,14 +10,33 @@ def menu
     while input != 'exit' do
         if input == 'breeds'
             @breeds = gets.strip.downcase 
-            API.
-        puts "Please enter a breed number to see more information about your chosen breed."
+            print_breeds
+        elsif input.to_i > 0 && input.to_i <= Breed.all.length 
+            breed = Breed.all[input.to_i-1]
+            API.get_breed(breed)
+            print_breed(breed)
+            prompt 
+        else
+            puts "Sorry but I don't understand. Please try again."
+            prompt 
+        end 
+        input = gets.strip.downcase 
+    end
+    puts "Thank you for using CatBreeds!"
+    puts "Goodbye!"
+end
+
 
     end
 
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 end
 
+def print_breeds
+    Breed.all.each_with_index(1) do |b, i|
+        puts " #{i}. #{b.name}"
+    end
+end
 
 def prompt
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
