@@ -1,6 +1,6 @@
 require 'pry'
 require 'httparty'
-require 'dotenv/load'
+require 'json'
 
 require_relative "catbreeds/version"
 require_relative "catbreeds/cli"
