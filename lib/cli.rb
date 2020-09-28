@@ -1,7 +1,7 @@
 class CLI 
-@@all = []
 
 def call
+    API.get_breeds
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     puts "Welcome to CatBreeds!"
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -10,11 +10,11 @@ def call
     input = gets.strip.downcase
     while input != 'exit' do
         if input == 'breeds'
-            @breeds = gets.strip.downcase 
+            # @breeds = gets.strip.downcase 
             print_breeds
         elsif input.to_i > 0 && input.to_i <= Breed.all.length 
             breed = Breed.all[input.to_i-1]
-            API.get_breeds(breed)
+            API.get_breed(breed)
             print_breed(breed)
             prompt 
         else
