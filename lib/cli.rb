@@ -29,6 +29,7 @@ class CLI
         puts " "
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         puts "Thank you for using CatBreeds!"
+        puts " "
         puts "Goodbye!"
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         puts " "
