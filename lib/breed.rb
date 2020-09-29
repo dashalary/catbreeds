@@ -17,12 +17,6 @@ class Breed
         @@all << self
       end 
 
-    def self.find_by_name(name)
-        self.all.select do |breed|
-        breed.name == name 
-        end
-    end
-
     def self.get_breeds
        API.get_breeds
         all
