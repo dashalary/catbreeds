@@ -31,9 +31,9 @@ class CLI
 
 
     def print_breeds
-    Breed.all.each_with_index do |b, i|
+        Breed.all.each_with_index do |b, i|
         puts " #{i+1}. #{b.name}"
-    end
+        end
     end
 
     def prompt
