@@ -2,9 +2,9 @@ class CLI
 
     def call
         puts " "
-        puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
         puts "Welcome to CatBreeds!"
-        puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
         puts " "
         puts "Please enter 'breeds' to see a list of all breeds of domestic cats or 'exit' to exit."
         puts " "
