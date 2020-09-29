@@ -17,12 +17,6 @@ class Breed
         @@all << self
       end 
 
-    def self.get_breeds
-       API.get_breeds
-        all
-      end
-
-
 
 
 
