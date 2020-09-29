@@ -1,6 +1,7 @@
 class CLI 
 
     def call
+        art
         puts " "
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
         puts "Welcome to CatBreeds!"
@@ -34,6 +35,7 @@ class CLI
         puts "Goodbye!"
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
         puts " "
+        art
     end
 
 
@@ -63,5 +65,17 @@ class CLI
     puts "Description: #{breed.description}"
     puts " "
     end
+
+    def art   
+    puts "      _                ___       _.--. "
+    puts "      \`.|\..----...-'`   `-._.-'_.-'` "
+    puts "      /  ' `         ,       __.--' "
+    puts "      )/' _/     \   `-_,   /     "
+    puts "      `-'''`''\_  ,_.-;_.-\_ ',  " 
+    puts "           _.-'_./   {_.'   ; / "
+    puts "         {_.-``-`         {_/  "
+            
+    end
+
 
 end
