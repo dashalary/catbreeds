@@ -1,9 +1,11 @@
 class CLI 
 
     def call
+        puts " "
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         puts "Welcome to CatBreeds!"
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        puts " "
         puts "Please enter 'breeds' to see a list of all breeds of domestic cats or 'exit' to exit."
         puts " "
         API.get_breeds
@@ -12,6 +14,8 @@ class CLI
         if input == 'breeds'
             puts " "
             print_breeds
+            puts " "
+            puts "Please enter a breed number to see more information about your chosen breed, or 'exit' to exit."
         elsif input.to_i > 0 && input.to_i <= Breed.all.length 
             breed = Breed.all[input.to_i-1]
             print_breed(breed)
@@ -22,10 +26,12 @@ class CLI
         end
             input = gets.strip.downcase 
         end
+        puts " "
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         puts "Thank you for using CatBreeds!"
         puts "Goodbye!"
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        puts " "
     end
 
 
@@ -37,7 +43,7 @@ class CLI
 
     def prompt
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-    puts "Enter a breed's number to see more information about a specific breed, 'breeds' to go back to the list of breeds, or 'exit' to exit."
+    puts "Please enter another breed's number to see more information about your chosen breed, 'breeds' to go back to the list of breeds, or 'exit' to exit."
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     end
 
