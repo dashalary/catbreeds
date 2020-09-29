@@ -10,10 +10,10 @@ class CLI
         input = gets.strip.downcase
         while input != 'exit' do
         if input == 'breeds'
+            puts " "
             print_breeds
         elsif input.to_i > 0 && input.to_i <= Breed.all.length 
             breed = Breed.all[input.to_i-1]
-            API.get_breed(breed)
             print_breed(breed)
             prompt 
         else
@@ -37,15 +37,19 @@ class CLI
 
     def prompt
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-    puts "Enter a breed's number to see more information about your chosen breed, 'breeds' to go back to the list of breeds, or 'exit' to exit."
+    puts "Enter a breed's number to see more information about a specific breed, 'breeds' to go back to the list of breeds, or 'exit' to exit."
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     end
 
 
     def print_breed(breed)
+    puts " "
     puts "Name: #{breed.name}"
+    puts " "
     puts "Temperament: #{breed.temperament}"
+    puts " "
     puts "Description: #{breed.description}"
+    puts " "
     end
 
 

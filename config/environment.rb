@@ -8,7 +8,7 @@ require_relative "../lib/cli"
 require_relative "../lib/api"
 require_relative "../lib/breed"
 
-module CatBreeds
-  class Error < StandardError; end
-  # Your code goes here...
-end
+# module CatBreeds
+#   class Error < StandardError; end
+#   # Your code goes here...
+# end

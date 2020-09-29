@@ -8,9 +8,11 @@ class API
         end
     end
 
-    def self.get_breed(breed)
-
-    end
+    # def self.get_breed(breed)
+    #     response = HTTParty.get("https://api.thecatapi.com/search?breed_id=#{breed.id})
+    #     breed = JSON.parse(response.body)
+    #     breed
+    # end
 
 
 
