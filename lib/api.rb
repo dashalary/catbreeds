@@ -2,7 +2,7 @@ class API
 
     def self.get_breeds
         response = HTTParty.get("https://api.thecatapi.com/v1/breeds")
-        breeds = JSON.parse(response.body)["breeds"]
+        breeds = JSON.parse(response.body)
         breeds.each do |b|
         Breed.new(name: b["name"], temperament: b["temperament"], description: b["description"])
         end
