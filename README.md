@@ -1,9 +1,9 @@
-# Catbreeds
+# CatBreeds
 
 Welcome to CatBreeds! CatBreeds is an interactive CLI app that allows users to view a list of domestic cat breeds and see additional information about the breed of their choosing. It uses HTTParty to retrieve data from an existing API, TheCatApi, and makes new instances of Ruby objects/classes to represent that data to users.
 
 
-## Installation
+<!-- ## Installation
 
 Add this line to your application's Gemfile:
 
@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO: Write usage instructions here -->
 
 <!-- ## Development
 
