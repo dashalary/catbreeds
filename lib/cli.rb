@@ -16,6 +16,7 @@ class CLI
             print_breeds
             puts " "
             puts "Please enter a breed number to see more information about your chosen breed, or 'exit' to exit."
+            puts " "
         elsif input.to_i > 0 && input.to_i <= Breed.all.length 
             breed = Breed.all[input.to_i-1]
             print_breed(breed)
@@ -44,7 +45,9 @@ class CLI
 
     def prompt
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    puts " "
     puts "Please enter another breed's number to see more information about your chosen breed, 'breeds' to go back to the list of breeds, or 'exit' to exit."
+    puts " "
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     end
 
@@ -52,6 +55,8 @@ class CLI
     def print_breed(breed)
     puts " "
     puts "Name: #{breed.name}"
+    puts " "
+    puts "Origin: #{breed.origin}"
     puts " "
     puts "Temperament: #{breed.temperament}"
     puts " "

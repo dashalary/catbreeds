@@ -1,3 +1,9 @@
   # headers: {"x-api-key" => "b3ae8931-fd14-4c56-8665-148ef5aedc66"
         # })
         # breeds = response[breeds]
+
+        # def self.get_breed(breed)
+    #     response = HTTParty.get("https://api.thecatapi.com/search?breed_id=#{breed.id})
+    #     breed = JSON.parse(response.body)
+    #     breed
+    # end

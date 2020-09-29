@@ -1,5 +1,5 @@
 class Breed 
-    attr_accessor :name, :temperament, :description
+    attr_accessor :name, :origin, :temperament, :description
     @@all = []
 
     def initialize(attr_hash)
