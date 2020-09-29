@@ -28,11 +28,11 @@ class CLI
             input = gets.strip.downcase 
         end
         puts " "
-        puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
         puts "Thank you for using CatBreeds!"
         puts " "
         puts "Goodbye!"
-        puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
         puts " "
     end
 
@@ -44,11 +44,11 @@ class CLI
     end
 
     def prompt
-    puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
     puts " "
     puts "Please enter another breed's number to see more information about your chosen breed, 'breeds' to go back to the list of breeds, or 'exit' to exit."
     puts " "
-    puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
     end
 
 
