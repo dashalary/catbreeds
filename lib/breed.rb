@@ -17,19 +17,4 @@ class Breed
         @@all << self
       end 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 end
