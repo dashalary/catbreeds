@@ -28,6 +28,7 @@ class CLI
         end
             input = gets.strip.downcase 
         end
+        art
         puts " "
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
         puts "Thank you for using CatBreeds!"
@@ -35,7 +36,6 @@ class CLI
         puts "Goodbye!"
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
         puts " "
-        art
     end
 
 
@@ -67,13 +67,22 @@ class CLI
     end
 
     def art   
-    puts "      _                ___       _.--. "
-    puts "      \`.|\..----...-'`   `-._.-'_.-'` "
-    puts "      /  ' `         ,       __.--' "
-    puts "      )/' _/     \   `-_,   /     "
-    puts "      `-'''`''\_  ,_.-;_.-\_ ',  " 
-    puts "           _.-'_./   {_.'   ; / "
-    puts "         {_.-``-`         {_/  "
+    puts " 
+    _                        
+    \`*-.                    
+     )  _`-.                 
+    .  : `. .                
+    : _   '  \               
+    ; *` _.   `*-._          
+    `-.-'          `-.       
+      ;       `       `.     
+      :.       .        \    
+      . \  .   :   .-'   .   
+      '  `+.;  ;  '      :   
+      :  '  |    ;       ;-. 
+      ; '   : :`-:     _.`* ;
+   .*' /  .*' ; .*`- +'  `*' 
+   `*-*   `*-*  `*-*'        "
             
     end
 
