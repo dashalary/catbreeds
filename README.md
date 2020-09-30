@@ -5,9 +5,15 @@ Welcome to CatBreeds! CatBreeds is an interactive CLI app that allows users to v
 
 ## Installation
 
-In order to use CatBreeds, please run the following line to install the necessary gems:
+Before using CatBreeds, please run the following line to install the necessary gems:
 
     $ bundle install
+
+## Usage
+
+In order to run CatBreeds, type in the following into your terminal and follow the prompts:
+
+     $ ruby bin/breeds
 
 
 ## Contributing
