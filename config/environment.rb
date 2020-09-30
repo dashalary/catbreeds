@@ -1,6 +1,5 @@
 require 'pry'
 require 'httparty'
-# require 'dotenv'
 require 'json'
 require 'colorize'
 
