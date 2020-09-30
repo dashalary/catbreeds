@@ -23,6 +23,7 @@ class CLI
             print_breed(breed)
             prompt 
         else
+            puts " "
             puts "Sorry but I don't understand. Please try again."
             prompt 
         end
@@ -48,7 +49,7 @@ class CLI
     def prompt
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
     puts " "
-    puts "Please enter another breed's number to see more information about your chosen breed, 'breeds' to go back to the list of breeds, or 'exit' to exit."
+    puts "Please enter another breed's number to see more information about your chosen breed, 'breeds' to go back to the list of breeds, or 'exit' to exit.".bold
     puts " "
     puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".cyan
     end
